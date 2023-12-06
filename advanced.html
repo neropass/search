@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Advanced Search</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="advanced.css">
+</head>
+
+<body>
+  <header>
+    <img src="images/logo.png" alt="google logo">
+    <nav>
+      <a href="index.html">Search</a>
+      <a href="images.html">Images</a>
+    </nav>
+  </header>
+
+  <div class="app-bar">
+    <label>Advanced Search</label>
+  </div>
+
+  <div class="cross-line"></div>
+
+  <div class="form-container">
+    <form action="https://www.google.com/search" role="search">
+      <div class="row">
+        <h3>Find pages with...</h3>
+        <h4>To do this in the search box.</h4>
+      </div>
+
+      <div class="row">
+        <span>all these words:</span>
+        <input type="text" autofocus name="as_q">
+        <p>Type the important words: <span class="example-text">tri-colour rat terrier</span></p>
+      </div>
+
+      <div class="row">
+        <span>this exact word or phrase:</span>
+        <input type="text" name="as_epq">
+        <p>Put exact words in quotes:<span class="example-text">"rat terrier"</span></p>
+      </div>
+
+      <div class="row">
+        <span>any of these words:</span>
+        <input type="text" name="as_oq">
+        <p>Type <span class="example-text">OR</span> between all the words you want: <span
+            class="example-text">miniature OR standard</span></p>
+      </div>
+
+      <div class="row">
+        <span>none of these words:</span>
+        <input type="text" name="as_eq">
+        <p>Put a minus sign just before words that you don't want:<br><span class="example-text">-rodent, -"Jack
+            Russell"</span></p>
+      </div>
+
+      <div class="row">
+        <span>numbers ranging from:</span>
+        <div class="input-container">
+          <input type="text" name="as_nlo">
+          <div>to</div>
+          <input type="text" name="as_nhi">
+        </div>
+
+        <p>Put two full stops between the numbers and add a unit of measurement:<br><span class="example-text">10..35
+            kg, £300..£500, 2010..2011</span></p>
+      </div>
+
+      <div class="cross-line"></div>
+
+      <div class="row">
+        <h3>Then narrow your results by...</h3>
+      </div>
+
+      <div class="row">
+        <span>language:</span>
+        <select name="lr">
+          <option value="">any language</option>
+          <option value="lang_af">Afrikaans</option>
+          <option value="lang_ar">Arabic</option>
+          <option value="lang_hy">Armenian</option>
+          <option value="lang_be">Belarusian</option>
+          <option value="lang_bg">Bulgarian</option>
+          <option value="lang_ru">Russian</option>
+        </select>
+        <p>Find pages in the language that you select.</p>
+      </div>
+
+      <div class="row">
+        <span>region:</span>
+        <select name="cr">
+          <option value="">any region</option>
+          <option value="countryAF">Afganistan</option>
+          <option value="countryAL">Albania</option>
+          <option value="countryBE">Belgium</option>
+          <option value="countryBG">Bulgaria</option>
+          <option value="countryNP">Nepal</option>
+          <option value="countryRU">Russia</option>
+        </select>
+        <p>Find pages published in a particular region.</p>
+      </div>
+
+      <div class="row">
+        <span>last update:</span>
+        <select name="as_qdr">
+          <option value="all">anytime</option>
+          <option value="d">past 24 hours</option>
+          <option value="w">past week</option>
+          <option value="m">past month</option>
+          <option value="y">past year</option>
+        </select>
+        <p>Find pages updated within the time that you specify.</p>
+      </div>
+
+      <div class="row">
+        <span>site or domain:</span>
+        <input type="text" name="as_sitesearch">
+        <p>Search one site (like <span class="example-text">wikipedia.org</span> ) or limit your results to a domain
+          like <span class="example-text">.edu, .org or .gov</span></p>
+      </div>
+
+      <div class="row">
+        <span>terms appearing:</span>
+        <select name="as_occt">
+          <option value="any">anywhere in the page</option>
+          <option value="title">in the title of the page</option>
+          <option value="body">in the text of the page</option>
+          <option value="url">in the URL of the page</option>
+          <option value="links">in link to the page</option>
+        </select>
+        <p>Search for terms in the whole page, page title or web address, or links to the page you're looking for.</p>
+      </div>
+
+      <div class="row">
+        <span>file type:</span>
+        <select name="as_filetype">
+          <option value="">any format</option>
+          <option value="pdf">Adobe Acrobat PDF (.pdf)</option>
+          <option value="ps">Adobe Postscript (.ps)</option>
+          <option value="dwf">Autodesk DWF (.dwf)</option>
+          <option value="kml">Google Earth KML (.kml)</option>
+          <option value="kmz">Google Earth KMZ (.kmz)</option>
+          <option value="xls">Microfost Excel (.xls)</option>
+          <option value="ppt">Microfost PowerPoint (.ppt)</option>
+          <option value="doc">Microfost Word (.doc)</option>
+          <option value="rtf">Rich Text Format (.rtf)</option>
+          <option value="swf">Shockwave Flash (.swf)</option>
+        </select>
+        <p>Find pages in the format that you prefer.</p>
+      </div>
+
+      <div class="row">
+        <span><a
+            href="https://www.google.com/advanced_search#:~:text=that%20you%20prefer.-,usage%20rights%3A,-not%20filtered%20by">usage
+            rights:</a></span>
+        <select name="sur">
+          <option value="">not filtered by licence</option>
+          <option value="f">free to use or share</option>
+          <option value="fc">free to use or share, even commercially</option>
+          <option value="fm">free to use share or modify</option>
+          <option value="fmc">free to use, share or modify, even commercially</option>
+        </select>
+        <p>Find pages that you are free to use yourself.
+        </p>
+      </div>
+
+      <div class="submit-btn">
+        <input type="submit" value="Advanced Search" >
+      </div>
+
+      <div class="cross-line"></div>
+    </form>
+
+    <div class="row">
+      <h3>You can also...</h3>
+      <div class="links">
+        <a href="https://support.google.com/websearch?p=adv_pages_similar&hl=en">Find pages that are similar to a
+          URL</a>
+        <a href="https://support.google.com/websearch?p=adv_pages_visited&hl=en">Search pages that you've visited</a>
+        <a href="https://support.google.com/websearch?p=adv_operators&hl=en">Use operators in the search box</a>
+        <a href="https://www.google.com/preferences?hl=en-RU">Customise your search settings</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="region">
+        <span>Russia</span>
+    </div>
+    <div class="links">
+        <div class="footer_left">
+          <a href="https://support.google.com/websearch/?p=ws_results_help&hl=en-RU&fg=1">Help</a>
+          <a href="https://policies.google.com/privacy?hl=en-RU&fg=1">Privacy</a>
+          <a href="https://policies.google.com/terms?hl=en-RU&fg=1">Terms</a>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>
